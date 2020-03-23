@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">EksamensProjektRobinJohan</string>
+    <string name="back">Back</string>
+    <string name="newActivity">New Activity</string>
+    <string name="activityStats">Activity Stats</string>
+    -- TODO: Opret alle strings
 </resources>
