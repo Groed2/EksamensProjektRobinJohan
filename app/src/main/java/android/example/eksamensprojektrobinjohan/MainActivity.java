@@ -11,4 +11,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    // TODO: Opret en alternativ Thread til processering af Data
+
+    // TODO: Opret en SQLite Database
+
+    // TODO: Opret ROOM tools til at tilgå SQLite Databasen
 }
