@@ -3,5 +3,6 @@
     <string name="back">Back</string>
     <string name="newActivity">New Activity</string>
     <string name="activityStats">Activity Stats</string>
-    -- TODO: Opret alle strings
+    -- TODO: 1: Opret navne strings til alle knapper
+
 </resources>
