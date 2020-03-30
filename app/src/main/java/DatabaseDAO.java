@@ -57,7 +57,10 @@ public interface DatabaseDAO
 
     @Query("SELECT * FROM activity ORDER BY mActivityId ASC")
     List<Activity> getAlphabetizedActivities();
-    
+
+    @Query("SELECT * FROM ONETIME_TABLE ORDER BY oneTimeID ASC")
+    List<oneTimeThings> getAlphabetizedThings();
+
 
 
 
