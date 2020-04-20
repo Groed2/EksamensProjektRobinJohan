@@ -1,3 +1,4 @@
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -50,14 +51,17 @@ public interface DatabaseDAO
     public void updateDay(Day day);
 
     @Query("SELECT * FROM day_table ORDER BY dayId ASC")
-    List<Day> getAlphabetizedDays();
+    LiveData<List<Day>> getAlphabetizedDays();
 
     @Query("SELECT * FROM weight_table ORDER BY mWeightId ASC")
-    List<Weight> getAlphabetizedWeight();
+    LiveData<List<Weight>> getAlphabetizedWeight();
 
     @Query("SELECT * FROM activity ORDER BY mActivityId ASC")
-    List<Activity> getAlphabetizedActivities();
-    
+    LiveData<List<Activity>> getAlphabetizedActivities();
+
+    @Query("SELECT * FROM ONETIME_TABLE ORDER BY oneTimeID ASC")
+    LiveData<List<oneTimeThings>> getAlphabetizedThings();
+
 
 
 
